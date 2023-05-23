@@ -18,7 +18,7 @@ const friends = [
         name: 'Lethu Skhosana'
     },
 ]
-
+    
 server.on('request', (req, res) => {
     const items = req.url.split('/');
     if (req.method === 'POST' && items[1] === 'friends') {
